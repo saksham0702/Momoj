@@ -21,7 +21,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className=" scroll h-auto bg-slate-950 p-4  text-white ">
+    <div className=" scroll min-h-[calc(100vh-5rem)] bg-slate-950 p-4  text-white ">
       <h1 className="text-2xl font-semibold mb-4  ">Your Cart</h1>
       <div className="space-y-4  ">
         {productItems.map((item, index) => (
