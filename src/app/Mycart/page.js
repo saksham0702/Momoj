@@ -83,10 +83,10 @@ const CartPage = () => {
         ))}
 
         {/* Total Section */}
-        <div className="mt-6 p-4  border-t border-slate-700 flex gap-5 relative md:mx-32 ">
+        <div className="mt-6 p-4 border-t border-slate-700 flex gap-5 relative md:mx-32 ">
       <div className="flex gap-5 items-center ">
-      <h3 className="text-xl font-semibold">Total Price :</h3>
-          <p className="text-lg flex items-center">
+      <h3 className="text-md md:lg font-semibold">Total Price :</h3>
+          <p className=" text-md md:text-lg flex items-center">
             <FaIndianRupeeSign />
             {productItems.reduce(
               (total, item, index) => total + item.price * quantities[index],
@@ -95,8 +95,8 @@ const CartPage = () => {
           </p>
       </div>
           <div className="flex gap-5 items-center">
-          <h3 className="text-xl font-semibold">Total Items :</h3>
-          <p className="text-lg relative top-0.5">{productItems.length}</p>
+          <h3 className=" text-sm  md:xl font-semibold">Total Items :</h3>
+          <p className="text-md  md:xl relative top-0.5">{productItems.length}</p>
           </div>
         </div>
       </div>
