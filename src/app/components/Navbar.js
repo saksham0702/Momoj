@@ -30,6 +30,7 @@ const Navbar = () => {
               className="hover:bg-green-600 hover:text-zinc-100 px-3 rounded-full hover:scale-[1.1] transition-transform"
               key={index}
               href={routes[index]}
+              onClick={toggleNavbar}
             >
               {item}
             </Link>
@@ -66,6 +67,7 @@ const Navbar = () => {
               className="hover:text-white hover:scale-[1.1] transition-transform"
               key={index}
               href={routes[index]}
+              onClick={toggleNavbar}
             >
               {item}
             </Link>
